@@ -24,8 +24,8 @@
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
-		<type fullname="UnityEngine.FlareLayer" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
+		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
@@ -36,9 +36,12 @@
 		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.CharacterController" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.Joint" preserve="nothing"/>
+		<type fullname="UnityEngine.HingeJoint" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
@@ -53,20 +56,24 @@
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.TerrainCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.TerrainData" preserve="nothing"/>
 		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
-		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Light" preserve="nothing"/>
+		<type fullname="UnityEngine.Terrain" preserve="nothing"/>
+		<type fullname="UnityEngine.TerrainLayer" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="Arena" preserve="nothing"/>
+		<type fullname="MainLobby" preserve="nothing"/>
+		<type fullname="PlayerControl" preserve="nothing"/>
+		<type fullname="UnityTemplateProjects.SimpleCameraController" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.AsteroidsGameManager" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Bullet" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.LobbyMainPanel" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.LobbyTopPanel" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.PlayerListEntry" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.PlayerOverviewPanel" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.RoomListEntry" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Spaceship" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.PunBasics.CameraWork" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.PunBasics.PlayerAnimatorManager" preserve="nothing"/>
@@ -76,9 +83,6 @@
 		<type fullname="Photon.Pun.Demo.SlotRacer.Utils.SplineWalker" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Utilities">
-		<type fullname="Photon.Pun.UtilityScripts.CountdownTimer" preserve="nothing"/>
-		<type fullname="Photon.Pun.UtilityScripts.EventSystemSpawner" preserve="nothing"/>
-		<type fullname="Photon.Pun.UtilityScripts.PlayerNumbering" preserve="nothing"/>
 		<type fullname="Photon.Pun.UtilityScripts.TextButtonTransition" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking">
@@ -114,31 +118,22 @@
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerVector3" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerVector4" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.UI.UIFoldout" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.Volume" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.VolumeProfile" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Universal.Runtime">
 		<type fullname="UnityEngine.Rendering.Universal.Bloom" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ChannelMixer" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ChromaticAberration" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ColorAdjustments" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ColorCurves" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ColorLookup" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.DepthOfField" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.FilmGrain" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.ForwardRendererData" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.LensDistortion" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.LiftGammaGain" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.MotionBlur" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.PaniniProjection" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.PostProcessData" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.SplitToning" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Tonemapping" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
+		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
