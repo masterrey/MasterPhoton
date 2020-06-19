@@ -485,6 +485,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA94A8FE5CCB19BA61C4C0873D391E987982FBBD3
 IL2CPP_EXTERN_C String_t* _stringLiteralAE2458665C24B7F84DCFC78F1B9E4B89CC7686DA;
 IL2CPP_EXTERN_C String_t* _stringLiteralB4A55C8D205A472440F5E472B934CB4CB2DA220C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB949B39DDC31B145CC1CD523849F62571BAF445C;
+IL2CPP_EXTERN_C String_t* _stringLiteralBE548C3BED85160BD804B9E5CA92E86D569B7013;
 IL2CPP_EXTERN_C String_t* _stringLiteralC3E839DF608469149DF1EF34A1C9BB26B62B5452;
 IL2CPP_EXTERN_C String_t* _stringLiteralC7DE7D92819CDB39F6DC245AC259312CB7CEE2F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralCC1498B65B36B2309AF1914D99D451768447BA9B;
@@ -544,6 +545,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityAction_1__ctor_m18CA7901D895C4EFF9722B
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_mD63C8616B316F25095F83F39E25D7E567AA72AB0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_RemoveListener_mFED96F493205A42898FCC95237C5B3B4D225EB13_RuntimeMethod_var;
 IL2CPP_EXTERN_C const uint32_t AppSettingsExtensions_GetChatSettings_mED2F0880883491192C86A1D488B62916BFCE7CC9_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Arena_RespawnPlayer_m2A3588D0B1B72C07C9C7AE91AFE34A083D325129_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Arena_Start_m2E3DEE963E860073F82E41DB222991AEBADC39F1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CameraState_LerpTowards_m883AAF2D3C7F5045B64CAF655FB84EF0FC98F282_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CameraState_Translate_m76BCC104A48EA7F125D5A50D874A2DEEA7967247_MetadataUsageId;
@@ -9113,6 +9115,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatAppSettings__ctor_m524407BB5F53BC2E2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppSettings_get_IsBestRegion_m91C5B0822B92617E60BF10F4B5CC0DDEABA0BFA7 (AppSettings_t6277B2AD0A574551E9746ED04FA848B0049A75A8 * __this, const RuntimeMethod* method);
 // System.Boolean Photon.Realtime.AppSettings::get_IsDefaultNameServer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AppSettings_get_IsDefaultNameServer_m6850EF3D007614C6F1CB9F7542AD973F73084006 (AppSettings_t6277B2AD0A574551E9746ED04FA848B0049A75A8 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.MonoBehaviour::Invoke(System.String,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_Invoke_m979EDEF812D4630882E2E8346776B6CA5A9176BF (MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429 * __this, String_t* ___methodName0, float ___time1, const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
@@ -9767,7 +9771,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Arena_Start_m2E3DEE963E860073F82E41DB222
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// PhotonNetwork.Instantiate("TankFree_Blue", respawn.transform.position,respawn.transform.rotation);
+		// Invoke("RespawnPlayer",3);
+		MonoBehaviour_Invoke_m979EDEF812D4630882E2E8346776B6CA5A9176BF(__this, _stringLiteralBE548C3BED85160BD804B9E5CA92E86D569B7013, (3.0f), /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void Arena::RespawnPlayer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Arena_RespawnPlayer_m2A3588D0B1B72C07C9C7AE91AFE34A083D325129 (Arena_t21D9C42DF0D2E50D71E3EE2C2C075F8D6854B7FB * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Arena_RespawnPlayer_m2A3588D0B1B72C07C9C7AE91AFE34A083D325129_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// PhotonNetwork.Instantiate("TankFree_Blue", respawn.transform.position, respawn.transform.rotation);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_respawn_4();
 		NullCheck(L_0);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_1 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_0, /*hidden argument*/NULL);

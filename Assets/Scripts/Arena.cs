@@ -9,7 +9,12 @@ public class Arena : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PhotonNetwork.Instantiate("TankFree_Blue", respawn.transform.position,respawn.transform.rotation);
+       Invoke("RespawnPlayer",3);
+    }
+
+    void RespawnPlayer()
+    {
+        PhotonNetwork.Instantiate("TankFree_Blue", respawn.transform.position, respawn.transform.rotation);
     }
 
     // Update is called once per frame
