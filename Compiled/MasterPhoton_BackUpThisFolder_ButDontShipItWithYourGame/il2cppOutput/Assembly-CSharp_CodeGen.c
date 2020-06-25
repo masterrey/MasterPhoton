@@ -146,109 +146,107 @@ extern void PlayerControl_Start_m9E68769B521728F3CA952D11BA9AE068461048BF ();
 extern void PlayerControl_Update_mB6BCD0B5C42037B3D8791A472BF6290B1937A58D ();
 // 0x0000003F System.Void PlayerControl::FixedUpdate()
 extern void PlayerControl_FixedUpdate_mF5F9EF080F46B814ED1705B041DDAD39C10EB7E6 ();
-// 0x00000040 UnityEngine.Color PlayerControl::GetColor(System.Int32)
-extern void PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC ();
-// 0x00000041 System.Void PlayerControl::ReceiveColor(System.Single,System.Single,System.Single)
+// 0x00000040 System.Void PlayerControl::ReceiveColor(System.Single,System.Single,System.Single)
 extern void PlayerControl_ReceiveColor_m2609246337F3C8A1CB032BCDC4FC5122AF01420C ();
-// 0x00000042 System.Void PlayerControl::.ctor()
+// 0x00000041 System.Void PlayerControl::.ctor()
 extern void PlayerControl__ctor_mFB09FAB1E5EE3D8037BC0D0DF9294BB501A5C869 ();
-// 0x00000043 System.Void Readme::.ctor()
+// 0x00000042 System.Void Readme::.ctor()
 extern void Readme__ctor_m23AE6143BDABB863B629ADE701E2998AB8651D4C ();
-// 0x00000044 System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
+// 0x00000043 System.Void UnityTemplateProjects.SimpleCameraController::OnEnable()
 extern void SimpleCameraController_OnEnable_mE3D6E47455F101F2DEEBC2A58D09A97CF38E80B8 ();
-// 0x00000045 UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
+// 0x00000044 UnityEngine.Vector3 UnityTemplateProjects.SimpleCameraController::GetInputTranslationDirection()
 extern void SimpleCameraController_GetInputTranslationDirection_m73C99DB69CEB467834BBA00A62415D1CEEF0CB47 ();
-// 0x00000046 System.Void UnityTemplateProjects.SimpleCameraController::Update()
+// 0x00000045 System.Void UnityTemplateProjects.SimpleCameraController::Update()
 extern void SimpleCameraController_Update_mBCD24408A4A2C4053F2F98DB808BD6DE88CA998F ();
-// 0x00000047 System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
+// 0x00000046 System.Void UnityTemplateProjects.SimpleCameraController::.ctor()
 extern void SimpleCameraController__ctor_m8DE12FC1A6C31D2D60ED78F0B574CE3F864F546E ();
-// 0x00000048 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
+// 0x00000047 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
 extern void ConnectAndJoinRandomLb_Start_mC1B526A630B8F8E905020BD3A89781A22C80D00F ();
-// 0x00000049 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
+// 0x00000048 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
 extern void ConnectAndJoinRandomLb_Update_mE51649FDE6E924B2FF01FE52C417959E357D122E ();
-// 0x0000004A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
+// 0x00000049 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
 extern void ConnectAndJoinRandomLb_OnConnected_m67AB069B00D2826B9E47FB7AA31DC7E1594A1A4E ();
-// 0x0000004B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
+// 0x0000004A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
 extern void ConnectAndJoinRandomLb_OnConnectedToMaster_mFD6847B18CB410CD67C03EC024CCB6642879501B ();
-// 0x0000004C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
+// 0x0000004B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
 extern void ConnectAndJoinRandomLb_OnDisconnected_m5D4320092A3E567CE0F95315816141B1ED160DA4 ();
-// 0x0000004D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+// 0x0000004C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationResponse_m5EAA0C376141FADCEAF50910B4E612996550B94A ();
-// 0x0000004E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
+// 0x0000004D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationFailed_mCD61DC01A2D2A9D9E4D4B8B5A830BDDB449A83A2 ();
-// 0x0000004F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
+// 0x0000004E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionListReceived_mFD94F91F64D0E37FA51EF26E4FE133EEAC281D69 ();
-// 0x00000050 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
+// 0x0000004F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void ConnectAndJoinRandomLb_OnRoomListUpdate_m4DA82485E114A0D92A352E7FC1C1AEE7D2B8AD36 ();
-// 0x00000051 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
+// 0x00000050 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
 extern void ConnectAndJoinRandomLb_OnLobbyStatisticsUpdate_mE413DF5F171397E18D6544E51A80387C74259218 ();
-// 0x00000052 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
+// 0x00000051 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
 extern void ConnectAndJoinRandomLb_OnJoinedLobby_m502FBFC94CF9F586704D618E5EED6AEBFAD5FC13 ();
-// 0x00000053 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
+// 0x00000052 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
 extern void ConnectAndJoinRandomLb_OnLeftLobby_m94B3879644426AC6473D52B9D076E30FAA34CE07 ();
-// 0x00000054 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
+// 0x00000053 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
 extern void ConnectAndJoinRandomLb_OnFriendListUpdate_m02DA9363DDB58901046844152E8205A0D006ED3B ();
-// 0x00000055 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
+// 0x00000054 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
 extern void ConnectAndJoinRandomLb_OnCreatedRoom_mD35351A0F34BA50CA89DB7C453A3FC10431A2E90 ();
-// 0x00000056 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
+// 0x00000055 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnCreateRoomFailed_m632EBBF45A9420C029CDB97057C29CB7FA7A6101 ();
-// 0x00000057 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
+// 0x00000056 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
 extern void ConnectAndJoinRandomLb_OnJoinedRoom_m20447393863F7E7C211A1162AE46964600742DEB ();
-// 0x00000058 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
+// 0x00000057 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRoomFailed_mAE025171DCED9AE6965DD61FE498AE19C4BA042F ();
-// 0x00000059 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
+// 0x00000058 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRandomFailed_m3CA8A34C4DAA0B495F86E6FF3FE7235E1C481D27 ();
-// 0x0000005A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
+// 0x00000059 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
 extern void ConnectAndJoinRandomLb_OnLeftRoom_m469D8BACCE6E068BA26D658FF3F7262E46942910 ();
-// 0x0000005B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
+// 0x0000005A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionPingCompleted_m9D6D7E9E33EF1B3AEDEB0C7B9F1BD3A8A147C4B6 ();
-// 0x0000005C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
+// 0x0000005B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
 extern void ConnectAndJoinRandomLb__ctor_mA2C7AC7CFCE8C75247D814AC4FC00E7147BE9338 ();
-// 0x0000005D System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::Start()
+// 0x0000005C System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::Start()
 extern void EventSystemSpawner_Start_mC0159B1608CE230431CE6E57942697BDA7E86058 ();
-// 0x0000005E System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
+// 0x0000005D System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
 extern void EventSystemSpawner__ctor_m30A05F9A28B40C737DED09A0568F5C8DBEC2A884 ();
-// 0x0000005F System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
+// 0x0000005E System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
 extern void OnStartDelete_Start_m8B374329777AEBB7817224B1CE204C467410FCB4 ();
-// 0x00000060 System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
+// 0x0000005F System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
 extern void OnStartDelete__ctor_mB27E9F07EB0548A659B0B9018AE84F72295E181A ();
-// 0x00000061 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
+// 0x00000060 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
 extern void TextButtonTransition_Awake_m63B0A899DD4CC64D84AFCCA563FF881D4CBE90F4 ();
-// 0x00000062 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
+// 0x00000061 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
 extern void TextButtonTransition_OnEnable_m09E4BAF6822C47BC8193E4D46AC05DCDB1322EFC ();
-// 0x00000063 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
+// 0x00000062 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
 extern void TextButtonTransition_OnDisable_m7B8FEF0CE10D18B41B6585D6343FF2ED4F6424FE ();
-// 0x00000064 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x00000063 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerEnter_mC0AD8DAF6BBF3562D7C2BEEBDE73857A7893599D ();
-// 0x00000065 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x00000064 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerExit_m30AAD5FD5D40E03121E5518C141CE75711BC6350 ();
-// 0x00000066 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
+// 0x00000065 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
 extern void TextButtonTransition__ctor_m52DC83C85CF76AC6B7565448CBD1985ED59B24CB ();
-// 0x00000067 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
+// 0x00000066 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
 extern void TextToggleIsOnTransition_OnEnable_mE64A3775C98726801505EF2FB7570872CB7A9C14 ();
-// 0x00000068 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
+// 0x00000067 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
 extern void TextToggleIsOnTransition_OnDisable_mFF7258B1F487B04A94DBEA372C6B93E18FB44D51 ();
-// 0x00000069 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
+// 0x00000068 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
 extern void TextToggleIsOnTransition_OnValueChanged_m5E21C09A751BF0A12568F92CB9D24A2F48E56C79 ();
-// 0x0000006A System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x00000069 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerEnter_m24D757CF4F34F1906A88990C83AF5F438F73A6A2 ();
-// 0x0000006B System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x0000006A System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerExit_m1F22B0EAB2D11AFCBCD61053B309D9BCE63CA659 ();
-// 0x0000006C System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
+// 0x0000006B System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
 extern void TextToggleIsOnTransition__ctor_m2E1359DF320C6AA925DD35EC851A6E2EE50EF6A3 ();
-// 0x0000006D System.Void Readme_Section::.ctor()
+// 0x0000006C System.Void Readme_Section::.ctor()
 extern void Section__ctor_mE73C1D6AE5454B5A67AAB04CAA5144A5CA0B0D96 ();
-// 0x0000006E System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
+// 0x0000006D System.Void UnityTemplateProjects.SimpleCameraController_CameraState::SetFromTransform(UnityEngine.Transform)
 extern void CameraState_SetFromTransform_m6467352ED87301E5F4A76456060A765CAB96AF3E ();
-// 0x0000006F System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
+// 0x0000006E System.Void UnityTemplateProjects.SimpleCameraController_CameraState::Translate(UnityEngine.Vector3)
 extern void CameraState_Translate_m76BCC104A48EA7F125D5A50D874A2DEEA7967247 ();
-// 0x00000070 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
+// 0x0000006F System.Void UnityTemplateProjects.SimpleCameraController_CameraState::LerpTowards(UnityTemplateProjects.SimpleCameraController_CameraState,System.Single,System.Single)
 extern void CameraState_LerpTowards_m883AAF2D3C7F5045B64CAF655FB84EF0FC98F282 ();
-// 0x00000071 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
+// 0x00000070 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::UpdateTransform(UnityEngine.Transform)
 extern void CameraState_UpdateTransform_mE3349362276789C1617C01276F7DE533BBA22623 ();
-// 0x00000072 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
+// 0x00000071 System.Void UnityTemplateProjects.SimpleCameraController_CameraState::.ctor()
 extern void CameraState__ctor_m4A83DF36C7D280050EA1B101E61B7E345C31A322 ();
-static Il2CppMethodPointer s_methodPointers[114] = 
+static Il2CppMethodPointer s_methodPointers[113] = 
 {
 	AppSettingsExtensions_GetChatSettings_mED2F0880883491192C86A1D488B62916BFCE7CC9,
 	ChannelSelector_SetChannel_mB944D0C7B822992C0BDD41C943E050DDA02EA8D4,
@@ -313,7 +311,6 @@ static Il2CppMethodPointer s_methodPointers[114] =
 	PlayerControl_Start_m9E68769B521728F3CA952D11BA9AE068461048BF,
 	PlayerControl_Update_mB6BCD0B5C42037B3D8791A472BF6290B1937A58D,
 	PlayerControl_FixedUpdate_mF5F9EF080F46B814ED1705B041DDAD39C10EB7E6,
-	PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC,
 	PlayerControl_ReceiveColor_m2609246337F3C8A1CB032BCDC4FC5122AF01420C,
 	PlayerControl__ctor_mFB09FAB1E5EE3D8037BC0D0DF9294BB501A5C869,
 	Readme__ctor_m23AE6143BDABB863B629ADE701E2998AB8651D4C,
@@ -365,7 +362,7 @@ static Il2CppMethodPointer s_methodPointers[114] =
 	CameraState_UpdateTransform_mE3349362276789C1617C01276F7DE533BBA22623,
 	CameraState__ctor_m4A83DF36C7D280050EA1B101E61B7E345C31A322,
 };
-static const int32_t s_InvokerIndices[114] = 
+static const int32_t s_InvokerIndices[113] = 
 {
 	0,
 	26,
@@ -394,7 +391,7 @@ static const int32_t s_InvokerIndices[114] =
 	26,
 	212,
 	212,
-	2151,
+	2154,
 	27,
 	27,
 	26,
@@ -407,7 +404,7 @@ static const int32_t s_InvokerIndices[114] =
 	23,
 	647,
 	23,
-	2080,
+	2083,
 	23,
 	23,
 	23,
@@ -430,12 +427,11 @@ static const int32_t s_InvokerIndices[114] =
 	23,
 	23,
 	23,
-	1473,
-	1522,
+	1525,
 	23,
 	23,
 	23,
-	1437,
+	1440,
 	23,
 	23,
 	23,
@@ -477,8 +473,8 @@ static const int32_t s_InvokerIndices[114] =
 	23,
 	23,
 	26,
-	1438,
-	1608,
+	1441,
+	1611,
 	26,
 	23,
 };
@@ -486,7 +482,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	114,
+	113,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

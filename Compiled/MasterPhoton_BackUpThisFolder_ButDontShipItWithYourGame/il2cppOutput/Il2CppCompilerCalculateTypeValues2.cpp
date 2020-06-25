@@ -31219,6 +31219,10 @@ public:
 	float ___motorpower_8;
 	// UnityEngine.MeshRenderer PlayerControl::rend
 	MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * ___rend_9;
+	// UnityEngine.MeshRenderer PlayerControl::rendt
+	MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * ___rendt_10;
+	// UnityEngine.GameObject PlayerControl::tower
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___tower_11;
 
 public:
 	inline static int32_t get_offset_of_rdb_4() { return static_cast<int32_t>(offsetof(PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54, ___rdb_4)); }
@@ -31270,6 +31274,24 @@ public:
 	{
 		___rend_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___rend_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_rendt_10() { return static_cast<int32_t>(offsetof(PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54, ___rendt_10)); }
+	inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * get_rendt_10() const { return ___rendt_10; }
+	inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED ** get_address_of_rendt_10() { return &___rendt_10; }
+	inline void set_rendt_10(MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * value)
+	{
+		___rendt_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___rendt_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_tower_11() { return static_cast<int32_t>(offsetof(PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54, ___tower_11)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_tower_11() const { return ___tower_11; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_tower_11() { return &___tower_11; }
+	inline void set_tower_11(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___tower_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___tower_11), (void*)value);
 	}
 };
 
@@ -43886,7 +43908,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4659[2] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4660;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4660 = { sizeof (PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[8] = 
 {
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rdb_4(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_pview_5(),
@@ -43894,6 +43916,8 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[6] =
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_playertorque_7(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_motorpower_8(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rend_9(),
+	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rendt_10(),
+	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_tower_11(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4661;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4661 = { sizeof (Readme_t3B6022BA9CBD2C56BD12C781DB20C5B34B6C4E46), -1, 0, 0 };

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4339861350199996378}
   - component: {fileID: 1192554187638677571}
   - component: {fileID: 7479840771013675249}
+  - component: {fileID: 4785803148575979758}
+  - component: {fileID: 726717523575846364}
   m_Layer: 0
   m_Name: TankFree_Tower
   m_TagString: Untagged
@@ -80,6 +82,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4785803148575979758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181818077799470962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 726717523575846364}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &726717523575846364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181818077799470962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!1 &636883874405053261
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +373,8 @@ MonoBehaviour:
   pview: {fileID: 1534806820}
   motorpower: 10000
   rend: {fileID: 8808128122493214712}
+  rendt: {fileID: 7479840771013675249}
+  tower: {fileID: 181818077799470962}
 --- !u!114 &6183645050575131933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +513,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.7815211, y: -0.33760524, z: 0.5514126}
+  m_ConnectedAnchor: {x: -0.7815211, y: -0.33760527, z: 0.5514127}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -619,7 +660,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.78152126, y: -0.33760536, z: -0.5722885}
+  m_ConnectedAnchor: {x: -0.78152126, y: -0.3376054, z: -0.57228816}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -765,7 +806,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.78180075, y: -0.33760536, z: 0.5514126}
+  m_ConnectedAnchor: {x: 0.7818008, y: -0.33760533, z: 0.55141246}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -911,7 +952,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.7818005, y: -0.33760536, z: -0.5722885}
+  m_ConnectedAnchor: {x: 0.78180045, y: -0.3376054, z: -0.5722885}
   m_UseSpring: 0
   m_Spring:
     spring: 0
