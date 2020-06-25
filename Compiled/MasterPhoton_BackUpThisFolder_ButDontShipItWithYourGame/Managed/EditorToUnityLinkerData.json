@@ -692,14 +692,14 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "PlayerControl",
+            "fullManagedTypeName": "MyCamera",
             "moduleName": "",
             "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityTemplateProjects.SimpleCameraController",
+            "fullManagedTypeName": "PlayerControl",
             "moduleName": "",
             "usedInScenes": []
         },

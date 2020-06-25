@@ -16,6 +16,10 @@ public class PlayerControl : MonoBehaviour
         {
             enabled = false;
         }
+        else
+        {
+            Camera.main.SendMessage("SetTarget", gameObject);
+        }
     }
 
     // Update is called once per frame

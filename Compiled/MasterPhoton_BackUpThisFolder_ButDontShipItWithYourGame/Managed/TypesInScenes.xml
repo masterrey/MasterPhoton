@@ -67,8 +67,8 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="Arena" preserve="nothing"/>
 		<type fullname="MainLobby" preserve="nothing"/>
+		<type fullname="MyCamera" preserve="nothing"/>
 		<type fullname="PlayerControl" preserve="nothing"/>
-		<type fullname="UnityTemplateProjects.SimpleCameraController" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
