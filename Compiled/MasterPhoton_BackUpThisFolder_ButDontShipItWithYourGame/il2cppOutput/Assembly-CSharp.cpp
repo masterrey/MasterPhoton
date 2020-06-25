@@ -420,6 +420,7 @@ IL2CPP_EXTERN_C RuntimeClass* ChatClient_t00238E132CA795D7F98C1DE6F433BB231F8755
 IL2CPP_EXTERN_C RuntimeClass* ChatGui_t1D879E32F6DC7B32CB3C7841735024A21FC4D7BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ChatState_tABA9DDB2C18934215ADACBF403DF9FD0A71D8B79_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ClientState_tB545F72ECD3CB392A4C335FACA31D158A7EE4282_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Color_t119BCA590009762C7223FDD3AF9706653AC84ED2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t5023F686D7CD7719B3C846145EFEE9D3A9E2C25D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t6F255E7DDFDDE5A78161A74CCD6B50099C33E456_il2cpp_TypeInfo_var;
@@ -447,6 +448,7 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_
 IL2CPP_EXTERN_C String_t* _stringLiteral12DEA96FEC20593566AB75692C9949596833ADC9;
 IL2CPP_EXTERN_C String_t* _stringLiteral153809851B33CE0CDCE06E5A572C675E18D0C3B5;
 IL2CPP_EXTERN_C String_t* _stringLiteral17CC1A3D0C198C0AAE7260E01B3EC1A6AF05B3D0;
+IL2CPP_EXTERN_C String_t* _stringLiteral1AB65C6D63D3679FCC5C08D88DF70DE2B2958D69;
 IL2CPP_EXTERN_C String_t* _stringLiteral1E88AB05D76FF253F292B74866D32460BB3836E2;
 IL2CPP_EXTERN_C String_t* _stringLiteral225023093699D52A0C6A3D20B07E03269D93BE05;
 IL2CPP_EXTERN_C String_t* _stringLiteral24D0E196249E0380D297BFB4136B3C5D7205BCDA;
@@ -3404,6 +3406,24 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(PunLogLevel_t4A6EF1499A00201A7593ACEF6CC7D36C865D0583, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Photon.Pun.RpcTarget
+struct  RpcTarget_tE30C1D8C1A41907B5F74531A47D12542724FD023 
+{
+public:
+	// System.Int32 Photon.Pun.RpcTarget::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RpcTarget_tE30C1D8C1A41907B5F74531A47D12542724FD023, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -9609,18 +9629,14 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR String_t* Region_get_Code_m719A1A1826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LoadBalancingClient_ConnectToRegionMaster_mE0B7ECD4DA2A14609337AD27C0CCA0BAF66D99BC (LoadBalancingClient_t83BDB381BB0B2B367F4B8AA0280EB8204428611A * __this, String_t* ___region0, const RuntimeMethod* method);
 // System.Void Photon.Realtime.AppSettings::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AppSettings__ctor_mB17D1271777BAF03B822F17E88EC4DDC8289E3F7 (AppSettings_t6277B2AD0A574551E9746ED04FA848B0049A75A8 * __this, const RuntimeMethod* method);
-// UnityEngine.Material UnityEngine.Renderer::get_material()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617 (Renderer_t0556D67DD582620D1F495627EDE30D03284151F4 * __this, const RuntimeMethod* method);
-// Photon.Realtime.Player Photon.Pun.PhotonView::get_Owner()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * PhotonView_get_Owner_mD339E981ADADF5A7F88F6D4F530F1EB8F1C34DEE (PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * __this, const RuntimeMethod* method);
-// System.Int32 Photon.Pun.UtilityScripts.PlayerNumberingExtensions::GetPlayerNumber(Photon.Realtime.Player)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerNumberingExtensions_GetPlayerNumber_m290B3908D413671DFFD25F5C1716B19C74437371 (Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * ___player0, const RuntimeMethod* method);
-// UnityEngine.Color PlayerControl::GetColor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC (PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54 * __this, int32_t ___colorChoice0, const RuntimeMethod* method);
-// System.Void UnityEngine.Material::set_color(UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value0, const RuntimeMethod* method);
 // System.Boolean Photon.Pun.PhotonView::get_IsMine()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhotonView_get_IsMine_m14D0563B88BF1F65C639273A8E2C67D392EFC22C (PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.Random::Range(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384 (float ___min0, float ___max1, const RuntimeMethod* method);
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, float ___r0, float ___g1, float ___b2, const RuntimeMethod* method);
+// System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PhotonView_RPC_mF1EDEA8179FFD6D6252300D87EA531C6B71D27B8 (PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * __this, String_t* ___methodName0, int32_t ___target1, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___parameters2, const RuntimeMethod* method);
 // UnityEngine.Camera UnityEngine.Camera::get_main()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * Camera_get_main_m9256A9F84F92D7ED73F3E6C4E2694030AD8B61FA (const RuntimeMethod* method);
 // System.Void UnityEngine.Component::SendMessage(System.String,System.Object)
@@ -9649,10 +9665,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_grey_mC37E72622FEB89E52EBCB5245D42DBF63E4FE3B7 (const RuntimeMethod* method);
 // UnityEngine.Color UnityEngine.Color::get_magenta()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Color_get_magenta_m04E2DDB63AA6288C701A93E248643A06EBD2D7AD (const RuntimeMethod* method);
-// System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780 (int32_t ___min0, int32_t ___max1, const RuntimeMethod* method);
-// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369 (Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * __this, float ___r0, float ___g1, float ___b2, const RuntimeMethod* method);
+// UnityEngine.Material UnityEngine.Renderer::get_material()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617 (Renderer_t0556D67DD582620D1F495627EDE30D03284151F4 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::set_color(UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_m6E2B3821A4A361556FC12E9B1C71E1D5DC002C5B (ScriptableObject_tAB015486CEAB714DA0D5C1BA389B84FB90427734 * __this, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
@@ -14256,44 +14272,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControl_Start_m9E68769B521728F3CA9
 	}
 	bool V_0 = false;
 	{
-		// rend.material.color = GetColor(pview.Owner.GetPlayerNumber());
-		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_0 = __this->get_rend_9();
-		NullCheck(L_0);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_1 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_0, /*hidden argument*/NULL);
-		PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * L_2 = __this->get_pview_5();
-		NullCheck(L_2);
-		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_3 = PhotonView_get_Owner_mD339E981ADADF5A7F88F6D4F530F1EB8F1C34DEE(L_2, /*hidden argument*/NULL);
-		int32_t L_4 = PlayerNumberingExtensions_GetPlayerNumber_m290B3908D413671DFFD25F5C1716B19C74437371(L_3, /*hidden argument*/NULL);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_5 = PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC(__this, L_4, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_1, L_5, /*hidden argument*/NULL);
 		// if (!pview.IsMine)
-		PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * L_6 = __this->get_pview_5();
-		NullCheck(L_6);
-		bool L_7 = PhotonView_get_IsMine_m14D0563B88BF1F65C639273A8E2C67D392EFC22C(L_6, /*hidden argument*/NULL);
-		V_0 = (bool)((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
-		bool L_8 = V_0;
-		if (!L_8)
+		PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * L_0 = __this->get_pview_5();
+		NullCheck(L_0);
+		bool L_1 = PhotonView_get_IsMine_m14D0563B88BF1F65C639273A8E2C67D392EFC22C(L_0, /*hidden argument*/NULL);
+		V_0 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_0046;
+			goto IL_001f;
 		}
 	}
 	{
 		// enabled = false;
 		Behaviour_set_enabled_m9755D3B17D7022D23D1E4C618BD9A6B66A5ADC6B(__this, (bool)0, /*hidden argument*/NULL);
-		goto IL_005e;
+		goto IL_0089;
 	}
 
-IL_0046:
+IL_001f:
 	{
+		// pview.RPC("ReceiveColor",RpcTarget.AllBuffered, new Color(Random.Range(0, 1.0f), Random.Range(0, 1.0f), Random.Range(0, 1.0f)));
+		PhotonView_t9781C6CA59BA006553D186D4FC011AECA4C9BE0B * L_3 = __this->get_pview_5();
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_5 = L_4;
+		float L_6 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((0.0f), (1.0f), /*hidden argument*/NULL);
+		float L_7 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((0.0f), (1.0f), /*hidden argument*/NULL);
+		float L_8 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((0.0f), (1.0f), /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369((&L_9), L_6, L_7, L_8, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_10 = L_9;
+		RuntimeObject * L_11 = Box(Color_t119BCA590009762C7223FDD3AF9706653AC84ED2_il2cpp_TypeInfo_var, &L_10);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_11);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_11);
+		NullCheck(L_3);
+		PhotonView_RPC_mF1EDEA8179FFD6D6252300D87EA531C6B71D27B8(L_3, _stringLiteral1AB65C6D63D3679FCC5C08D88DF70DE2B2958D69, 3, L_5, /*hidden argument*/NULL);
 		// Camera.main.SendMessage("SetTarget", gameObject);
-		Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * L_9 = Camera_get_main_m9256A9F84F92D7ED73F3E6C4E2694030AD8B61FA(/*hidden argument*/NULL);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(__this, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		Component_SendMessage_mE3B1D6FC26F26FA4218F1BCFDD1E41BF3ACB34B1(L_9, _stringLiteral6AC5DD775419A9A96C0ECE696C9D071F472FF6D8, L_10, /*hidden argument*/NULL);
+		Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * L_12 = Camera_get_main_m9256A9F84F92D7ED73F3E6C4E2694030AD8B61FA(/*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(__this, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Component_SendMessage_mE3B1D6FC26F26FA4218F1BCFDD1E41BF3ACB34B1(L_12, _stringLiteral6AC5DD775419A9A96C0ECE696C9D071F472FF6D8, L_13, /*hidden argument*/NULL);
 	}
 
-IL_005e:
+IL_0089:
 	{
 		// }
 		return;
@@ -14410,7 +14432,7 @@ IL_002b:
 		// case 0: return Color.red;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_2 = Color_get_red_m5562DD438931CF0D1FBBBB29BF7F8B752AF38957(/*hidden argument*/NULL);
 		V_1 = L_2;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_0033:
@@ -14418,7 +14440,7 @@ IL_0033:
 		// case 1: return Color.green;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_3 = Color_get_green_mD53D8F980E92A0755759FBB2981E3DDEFCD084C0(/*hidden argument*/NULL);
 		V_1 = L_3;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_003b:
@@ -14426,7 +14448,7 @@ IL_003b:
 		// case 2: return Color.blue;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_4 = Color_get_blue_m5449DCBB31EEB2324489989754C00123982EBABA(/*hidden argument*/NULL);
 		V_1 = L_4;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_0043:
@@ -14434,7 +14456,7 @@ IL_0043:
 		// case 3: return Color.yellow;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_5 = Color_get_yellow_mC8BD62CCC364EA5FC4273D4C2E116D0E2DE135AE(/*hidden argument*/NULL);
 		V_1 = L_5;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_004b:
@@ -14442,7 +14464,7 @@ IL_004b:
 		// case 4: return Color.cyan;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_6 = Color_get_cyan_m4E9C84C7E1003311C2D4BDB281F2D11DF5F7FDE2(/*hidden argument*/NULL);
 		V_1 = L_6;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_0053:
@@ -14450,7 +14472,7 @@ IL_0053:
 		// case 5: return Color.grey;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_7 = Color_get_grey_mC37E72622FEB89E52EBCB5245D42DBF63E4FE3B7(/*hidden argument*/NULL);
 		V_1 = L_7;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_005b:
@@ -14458,7 +14480,7 @@ IL_005b:
 		// case 6: return Color.magenta;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_8 = Color_get_magenta_m04E2DDB63AA6288C701A93E248643A06EBD2D7AD(/*hidden argument*/NULL);
 		V_1 = L_8;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_0063:
@@ -14466,27 +14488,42 @@ IL_0063:
 		// case 7: return Color.white;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_9 = Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905(/*hidden argument*/NULL);
 		V_1 = L_9;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
 IL_006b:
 	{
-		// return new Color(Random.Range(0,1), colorChoice * 0.1f, Random.Range(0, 1));
-		int32_t L_10 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(0, 1, /*hidden argument*/NULL);
+		// return new Color(Random.Range(0,1.0f), colorChoice * 0.1f, Random.Range(0, 1.0f));
+		float L_10 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((0.0f), (1.0f), /*hidden argument*/NULL);
 		int32_t L_11 = ___colorChoice0;
-		int32_t L_12 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(0, 1, /*hidden argument*/NULL);
+		float L_12 = Random_Range_m2844A4A71C86BDF83A12D97FC6DD95278E87E384((0.0f), (1.0f), /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_13;
 		memset((&L_13), 0, sizeof(L_13));
-		Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369((&L_13), (((float)((float)L_10))), ((float)il2cpp_codegen_multiply((float)(((float)((float)L_11))), (float)(0.1f))), (((float)((float)L_12))), /*hidden argument*/NULL);
+		Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369((&L_13), L_10, ((float)il2cpp_codegen_multiply((float)(((float)((float)L_11))), (float)(0.1f))), L_12, /*hidden argument*/NULL);
 		V_1 = L_13;
-		goto IL_008b;
+		goto IL_0099;
 	}
 
-IL_008b:
+IL_0099:
 	{
 		// }
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_14 = V_1;
 		return L_14;
+	}
+}
+// System.Void PlayerControl::ReceiveColor(UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControl_ReceiveColor_m54C304117E52F53F439C5E02A91067956CBA29E4 (PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___c0, const RuntimeMethod* method)
+{
+	{
+		// rend.material.color = c;
+		MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * L_0 = __this->get_rend_9();
+		NullCheck(L_0);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_1 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_0, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_2 = ___c0;
+		NullCheck(L_1);
+		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_1, L_2, /*hidden argument*/NULL);
+		// }
+		return;
 	}
 }
 // System.Void PlayerControl::.ctor()

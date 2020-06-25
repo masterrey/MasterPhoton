@@ -14,13 +14,15 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend.material.color = GetColor(pview.Owner.GetPlayerNumber());
+       
         if (!pview.IsMine)
         {
             enabled = false;
         }
         else
         {
+            pview.RPC("ReceiveColor",RpcTarget.AllBuffered, new Color(Random.Range(0, 1.0f), Random.Range(0, 1.0f), Random.Range(0, 1.0f)));
+
             Camera.main.SendMessage("SetTarget", gameObject);
         }
     }
@@ -50,6 +52,13 @@ public class PlayerControl : MonoBehaviour
             case 7: return Color.white;
         }
 
-        return new Color(Random.Range(0,1), colorChoice * 0.1f, Random.Range(0, 1));
+        return new Color(Random.Range(0,1.0f), colorChoice * 0.1f, Random.Range(0, 1.0f));
+    }
+
+    [PunRPC]
+    void ReceiveColor(Color c)
+    {
+
+        rend.material.color = c;
     }
 }
