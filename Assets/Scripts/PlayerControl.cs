@@ -13,15 +13,10 @@ public class PlayerControl : MonoBehaviour
     public MeshRenderer rend;
     // Start is called before the first frame update
     void Start()
-    {
-       
-        if (!pview.IsMine)
+    { 
+        if (pview.IsMine)
         {
-            enabled = false;
-        }
-        else
-        {
-            pview.RPC("ReceiveColor",RpcTarget.AllBuffered, new Color(Random.Range(0, 1.0f), Random.Range(0, 1.0f), Random.Range(0, 1.0f)));
+            pview.RPC("ReceiveColor",RpcTarget.AllBuffered, Random.Range(0, 1.0f), Random.Range(0, 1.0f), Random.Range(0, 1.0f));
 
             Camera.main.SendMessage("SetTarget", gameObject);
         }
@@ -30,13 +25,19 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playercommand=new Vector3(0, 0, Input.GetAxis("Vertical"));
-        playertorque = new Vector3(0, Input.GetAxis("Horizontal"), 0);
+        if (pview.IsMine)
+        {
+            playercommand = new Vector3(0, 0, Input.GetAxis("Vertical"));
+            playertorque = new Vector3(0, Input.GetAxis("Horizontal"), 0);
+        }
     }
     private void FixedUpdate()
     {
-        rdb.AddRelativeForce(playercommand * motorpower);
-        rdb.AddTorque(playertorque * motorpower);
+        if (pview.IsMine)
+        {
+            rdb.AddRelativeForce(playercommand * motorpower);
+            rdb.AddTorque(playertorque * motorpower);
+        }
     }
     Color GetColor(int colorChoice)
     {
@@ -56,9 +57,9 @@ public class PlayerControl : MonoBehaviour
     }
 
     [PunRPC]
-    void ReceiveColor(Color c)
+    void ReceiveColor(float r, float g, float b)
     {
-
+        Color c = new Color(r, g, b);
         rend.material.color = c;
     }
 }

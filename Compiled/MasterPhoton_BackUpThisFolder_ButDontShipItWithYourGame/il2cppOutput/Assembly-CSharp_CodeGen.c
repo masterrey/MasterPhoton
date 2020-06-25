@@ -148,8 +148,8 @@ extern void PlayerControl_Update_mB6BCD0B5C42037B3D8791A472BF6290B1937A58D ();
 extern void PlayerControl_FixedUpdate_mF5F9EF080F46B814ED1705B041DDAD39C10EB7E6 ();
 // 0x00000040 UnityEngine.Color PlayerControl::GetColor(System.Int32)
 extern void PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC ();
-// 0x00000041 System.Void PlayerControl::ReceiveColor(UnityEngine.Color)
-extern void PlayerControl_ReceiveColor_m54C304117E52F53F439C5E02A91067956CBA29E4 ();
+// 0x00000041 System.Void PlayerControl::ReceiveColor(System.Single,System.Single,System.Single)
+extern void PlayerControl_ReceiveColor_m2609246337F3C8A1CB032BCDC4FC5122AF01420C ();
 // 0x00000042 System.Void PlayerControl::.ctor()
 extern void PlayerControl__ctor_mFB09FAB1E5EE3D8037BC0D0DF9294BB501A5C869 ();
 // 0x00000043 System.Void Readme::.ctor()
@@ -314,7 +314,7 @@ static Il2CppMethodPointer s_methodPointers[114] =
 	PlayerControl_Update_mB6BCD0B5C42037B3D8791A472BF6290B1937A58D,
 	PlayerControl_FixedUpdate_mF5F9EF080F46B814ED1705B041DDAD39C10EB7E6,
 	PlayerControl_GetColor_mD4016CB6A189D831F97546379ECF0EEC4874ABAC,
-	PlayerControl_ReceiveColor_m54C304117E52F53F439C5E02A91067956CBA29E4,
+	PlayerControl_ReceiveColor_m2609246337F3C8A1CB032BCDC4FC5122AF01420C,
 	PlayerControl__ctor_mFB09FAB1E5EE3D8037BC0D0DF9294BB501A5C869,
 	Readme__ctor_m23AE6143BDABB863B629ADE701E2998AB8651D4C,
 	SimpleCameraController_OnEnable_mE3D6E47455F101F2DEEBC2A58D09A97CF38E80B8,
@@ -431,7 +431,7 @@ static const int32_t s_InvokerIndices[114] =
 	23,
 	23,
 	1473,
-	1470,
+	1522,
 	23,
 	23,
 	23,
