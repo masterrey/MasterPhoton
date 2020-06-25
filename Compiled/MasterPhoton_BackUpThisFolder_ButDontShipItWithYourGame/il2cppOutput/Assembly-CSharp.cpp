@@ -9787,6 +9787,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Color__ctor_mC9AEEB3931D5B8C37483A884DD8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617 (Renderer_t0556D67DD582620D1F495627EDE30D03284151F4 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::set_color(UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_m1FCC884218DB2A0DC0899C6FE4F0B131341C1243 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___explosionPosition1, float ___explosionRadius2, const RuntimeMethod* method);
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_m6E2B3821A4A361556FC12E9B1C71E1D5DC002C5B (ScriptableObject_tAB015486CEAB714DA0D5C1BA389B84FB90427734 * __this, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
@@ -14533,9 +14535,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControl_FixedUpdate_mF5F9EF080F46B
 		NullCheck(L_11);
 		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_13 = Camera_ScreenPointToRay_m27638E78502DB6D6D7113F81AF7C210773B828F3(L_11, L_12, /*hidden argument*/NULL);
 		V_1 = L_13;
-		// if (Physics.Raycast(ray, out hit, 100))
+		// if (Physics.Raycast(ray, out hit, 10000))
 		Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  L_14 = V_1;
-		bool L_15 = Physics_Raycast_mE1590EE4E2DC950A9FC2437E98EE8CD2EC2DEE67(L_14, (RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), (100.0f), /*hidden argument*/NULL);
+		bool L_15 = Physics_Raycast_mE1590EE4E2DC950A9FC2437E98EE8CD2EC2DEE67(L_14, (RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *)(&V_2), (10000.0f), /*hidden argument*/NULL);
 		V_3 = L_15;
 		bool L_16 = V_3;
 		if (!L_16)
@@ -14593,6 +14595,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControl_ReceiveColor_m2609246337F3
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_8 = V_0;
 		NullCheck(L_7);
 		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_7, L_8, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void PlayerControl::OnParticleCollision(UnityEngine.GameObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControl_OnParticleCollision_m4ABA26A04CAAD5DB84A81CFA96EBCAF3023A5C68 (PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54 * __this, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___other0, const RuntimeMethod* method)
+{
+	{
+		// rdb.AddExplosionForce(50, transform.position, 10);
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_0 = __this->get_rdb_4();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_1 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_2 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Rigidbody_AddExplosionForce_m1FCC884218DB2A0DC0899C6FE4F0B131341C1243(L_0, (50.0f), L_2, (10.0f), /*hidden argument*/NULL);
 		// }
 		return;
 	}

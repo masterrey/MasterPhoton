@@ -43,7 +43,7 @@ public class PlayerControl : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out hit, 10000))
             {
                 tower.transform.LookAt(hit.point);
                 Debug.DrawLine(ray.origin, hit.point);
@@ -60,4 +60,12 @@ public class PlayerControl : MonoBehaviour
         rend.material.color = c;
         rendt.material.color = c;
     }
+
+
+    private void OnParticleCollision(GameObject other)
+    {
+       
+        rdb.AddExplosionForce(50, transform.position, 10);
+    }
+   
 }
