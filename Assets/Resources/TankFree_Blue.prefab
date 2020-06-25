@@ -333,6 +333,7 @@ MonoBehaviour:
   rdb: {fileID: 1534806819}
   pview: {fileID: 1534806820}
   motorpower: 10000
+  rend: {fileID: 8808128122493214712}
 --- !u!114 &6183645050575131933
 MonoBehaviour:
   m_ObjectHideFlags: 0
