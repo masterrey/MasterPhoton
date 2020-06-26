@@ -376,6 +376,7 @@ MonoBehaviour:
   rend: {fileID: 8808128122493214712}
   rendt: {fileID: 7479840771013675249}
   tower: {fileID: 181818077799470962}
+  particle: {fileID: 7017562307715529636}
 --- !u!114 &6183645050575131933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,7 +1399,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2

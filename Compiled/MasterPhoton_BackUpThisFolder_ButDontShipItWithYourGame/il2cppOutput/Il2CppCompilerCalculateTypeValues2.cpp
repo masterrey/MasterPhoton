@@ -31223,6 +31223,8 @@ public:
 	MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * ___rendt_10;
 	// UnityEngine.GameObject PlayerControl::tower
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___tower_11;
+	// UnityEngine.ParticleSystem PlayerControl::particle
+	ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * ___particle_12;
 
 public:
 	inline static int32_t get_offset_of_rdb_4() { return static_cast<int32_t>(offsetof(PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54, ___rdb_4)); }
@@ -31292,6 +31294,15 @@ public:
 	{
 		___tower_11 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___tower_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_particle_12() { return static_cast<int32_t>(offsetof(PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54, ___particle_12)); }
+	inline ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * get_particle_12() const { return ___particle_12; }
+	inline ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D ** get_address_of_particle_12() { return &___particle_12; }
+	inline void set_particle_12(ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * value)
+	{
+		___particle_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___particle_12), (void*)value);
 	}
 };
 
@@ -43908,7 +43919,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4659[2] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4660;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4660 = { sizeof (PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[9] = 
 {
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rdb_4(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_pview_5(),
@@ -43918,6 +43929,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4660[8] =
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rend_9(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_rendt_10(),
 	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_tower_11(),
+	PlayerControl_t92059311113E8B78FB412DFECFACC4519FFACB54::get_offset_of_particle_12(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4661;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4661 = { sizeof (Readme_t3B6022BA9CBD2C56BD12C781DB20C5B34B6C4E46), -1, 0, 0 };

@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     public MeshRenderer rend;
     public MeshRenderer rendt;
     public GameObject tower;
+    public ParticleSystem particle;
     // Start is called before the first frame update
     void Start()
     { 
@@ -31,6 +32,11 @@ public class PlayerControl : MonoBehaviour
         {
             playercommand = new Vector3(0, 0, Input.GetAxis("Vertical"));
             playertorque = new Vector3(0, Input.GetAxis("Horizontal"), 0);
+
+            if (Input.GetButtonDown("Fire1"))
+            {
+                pview.RPC("Fire", RpcTarget.All);
+            }
         }
     }
     private void FixedUpdate()
@@ -49,6 +55,8 @@ public class PlayerControl : MonoBehaviour
                 Debug.DrawLine(ray.origin, hit.point);
             }
 
+
+
         }
     }
    
@@ -64,8 +72,14 @@ public class PlayerControl : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-       
+        print("Hit!");
         rdb.AddExplosionForce(50, transform.position, 10);
     }
    
+
+    [PunRPC]
+    void Fire()
+    {
+        particle.Emit(1);
+    }
 }
