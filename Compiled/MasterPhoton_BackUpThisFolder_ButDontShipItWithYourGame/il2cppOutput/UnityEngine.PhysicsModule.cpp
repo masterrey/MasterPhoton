@@ -1439,10 +1439,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddRelativeForce_m90667A3C15C9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_Injected_mBD4EFD1DF707E92D237322E8A48B5827D3E8AD6B (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___torque0, int32_t ___mode1, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::AddTorque(UnityEngine.Vector3,UnityEngine.ForceMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_m18EA054D294E8A26F6485C1E933E986BD5BE5F60 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___torque0, int32_t ___mode1, const RuntimeMethod* method);
-// System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method);
-// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_m8A2C25CE73AC51E1C255929733A4187089BA689A (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method);
 // System.Void UnityEngine.Component::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
 #ifdef __clang__
@@ -3295,29 +3291,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_mB9B6AE5C84CCB626CDD
 		return;
 	}
 }
-// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_m8A2C25CE73AC51E1C255929733A4187089BA689A (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method)
-{
-	{
-		float L_0 = ___explosionForce0;
-		float L_1 = ___explosionRadius2;
-		float L_2 = ___upwardsModifier3;
-		int32_t L_3 = ___mode4;
-		Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07(__this, L_0, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___explosionPosition1), L_1, L_2, L_3, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_m1FCC884218DB2A0DC0899C6FE4F0B131341C1243 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___explosionPosition1, float ___explosionRadius2, const RuntimeMethod* method)
-{
-	{
-		float L_0 = ___explosionForce0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = ___explosionPosition1;
-		float L_2 = ___explosionRadius2;
-		Rigidbody_AddExplosionForce_m8A2C25CE73AC51E1C255929733A4187089BA689A(__this, L_0, L_1, L_2, (0.0f), 0, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void UnityEngine.Rigidbody::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody__ctor_m7E9FF7B44B8A3B05217339C2C852A4BF620A12E4 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, const RuntimeMethod* method)
 {
@@ -3433,15 +3406,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_Injected_mBD4EFD1DF7
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Rigidbody_AddTorque_Injected_mBD4EFD1DF707E92D237322E8A48B5827D3E8AD6B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddTorque_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)");
 	_il2cpp_icall_func(__this, ___torque0, ___mode1);
-}
-// System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, float ___explosionForce0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method)
-{
-	typedef void (*Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07_ftn) (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *, float, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, float, float, int32_t);
-	static Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Rigidbody_AddExplosionForce_Injected_m52842CCC1B482C3713F35132507C8F9652BC5D07_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)");
-	_il2cpp_icall_func(__this, ___explosionForce0, ___explosionPosition1, ___explosionRadius2, ___upwardsModifier3, ___mode4);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

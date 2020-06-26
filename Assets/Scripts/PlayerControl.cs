@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour
     public MeshRenderer rendt;
     public GameObject tower;
     public ParticleSystem particle;
+    public float cooldown;
+    public AudioSource audfire;
     // Start is called before the first frame update
     void Start()
     { 
@@ -38,6 +40,8 @@ public class PlayerControl : MonoBehaviour
                 pview.RPC("Fire", RpcTarget.All);
             }
         }
+       if(cooldown>0) 
+            cooldown -= Time.deltaTime;
     }
     private void FixedUpdate()
     {
@@ -73,13 +77,21 @@ public class PlayerControl : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         print("Hit!");
-        rdb.AddExplosionForce(50, transform.position, 10);
+        if (cooldown <= 0)
+        {
+            rdb.AddForce(Vector3.up * 10000, ForceMode.Impulse);
+            rdb.AddTorque(Vector3.up * 10000, ForceMode.Impulse);
+            cooldown = 3;
+        }
     }
+
+    
    
 
     [PunRPC]
     void Fire()
     {
         particle.Emit(1);
+        audfire.Play();
     }
 }
