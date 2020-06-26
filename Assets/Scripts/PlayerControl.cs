@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour
     public ParticleSystem particle;
     public float cooldown;
     public AudioSource audfire;
+    public AudioSource motor;
     // Start is called before the first frame update
     void Start()
     { 
@@ -39,6 +40,7 @@ public class PlayerControl : MonoBehaviour
             {
                 pview.RPC("Fire", RpcTarget.All);
             }
+            motor.pitch = playercommand.magnitude*0.2f + 1f;
         }
        if(cooldown>0) 
             cooldown -= Time.deltaTime;
