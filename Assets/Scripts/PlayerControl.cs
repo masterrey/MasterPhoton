@@ -42,6 +42,13 @@ public class PlayerControl : MonoBehaviour
         }
        if(cooldown>0) 
             cooldown -= Time.deltaTime;
+
+        if (cooldown <= 0 && transform.up.y < 0)
+        {
+            transform.position += Vector3.up * 5;
+            transform.up = Vector3.up;
+        }
+
     }
     private void FixedUpdate()
     {
